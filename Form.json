@@ -1,0 +1,102 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Please fill out the form",
+            "weight": "Bolder",
+            "size": "Medium"
+        },
+        {
+            "type": "TextBlock",
+            "text": "AMI ID",
+            "separator": true
+        },
+        {
+            "type": "Input.Text",
+            "id": "ami_id",
+            "placeholder": "Enter AMI ID"
+        },
+        {
+            "type": "TextBlock",
+            "text": "BIO Screening Date",
+            "separator": true
+        },
+        {
+            "type": "Input.Date",
+            "id": "bio_screening_date",
+            "placeholder": "Select BIO Screening Date"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Incident Number",
+            "separator": true
+        },
+        {
+            "type": "Input.Text",
+            "id": "incident_number",
+            "placeholder": "Enter Incident Number"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Select Incident Type",
+            "separator": true
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "id": "incident_type",
+            "style": "expanded",
+            "isMultiSelect": true,
+            "value": "",
+            "choices": [
+                {
+                    "title": "Option 1",
+                    "value": "option_1"
+                },
+                {
+                    "title": "Option 2",
+                    "value": "option_2"
+                },
+                {
+                    "title": "Option 3",
+                    "value": "option_3"
+                },
+                {
+                    "title": "Option 4",
+                    "value": "option_4"
+                },
+                {
+                    "title": "Option 5",
+                    "value": "option_5"
+                },
+                {
+                    "title": "Option 6",
+                    "value": "option_6"
+                },
+                {
+                    "title": "Option 7",
+                    "value": "option_7"
+                },
+                {
+                    "title": "Option 8",
+                    "value": "option_8"
+                },
+                {
+                    "title": "Option 9",
+                    "value": "option_9"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit",
+            "data": {
+                "type": "form_submit"
+            }
+        }
+    ]
+}
